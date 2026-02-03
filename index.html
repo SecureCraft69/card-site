@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Имя Фамилия — сайт-визитка</title>
+  <meta name="description" content="Коротко: кто вы и что делаете. 120–160 символов." />
+
+  <!-- Open Graph превью (для Telegram/FB) -->
+  <meta property="og:title" content="Имя Фамилия — сайт-визитка" />
+  <meta property="og:description" content="Коротко: кто вы и что делаете." />
+  <meta property="og:type" content="website" />
+  <!-- Если будет картинка-превью: assets/og.jpg -->
+  <!-- <meta property="og:image" content="assets/og.jpg" /> -->
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+<script src="js/main.js"></script>
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="На главную">Имя</a>
+
+     <div class="navwrap" id="navwrap">
+  <nav class="nav" id="nav" aria-label="Основная навигация">
+    <a class="nav__link" href="#services">Услуги</a>
+    <a class="nav__link" href="#work">Кейсы</a>
+    <a class="nav__link" href="#about">Обо мне</a>
+    <a class="nav__link" href="#contact">Контакты</a>
+  </nav>
+</div>
+
+      <!-- Кнопка для мобильного меню (пока без логики) -->
+      <button class="burger" id="burger" type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="nav">
+  ☰
+</button>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Я делаю X, чтобы у вас было Y</h1>
+        <p class="hero__text">
+          1–2 предложения: кому вы помогаете, что делаете, чем отличаетесь.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Написать</a>
+          <a class="btn btn--ghost" href="#work">Посмотреть кейсы</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title">Услуги</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3 class="card__title">Услуга 1</h3>
+            <p class="card__text">Короткое описание в 1–2 строки.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Услуга 2</h3>
+            <p class="card__text">Короткое описание в 1–2 строки.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Услуга 3</h3>
+            <p class="card__text">Короткое описание в 1–2 строки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section__title">Кейсы</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3 class="card__title">Проект A</h3>
+            <p class="card__text">Что сделали + измеримый результат (если есть).</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Открыть</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Проект B</h3>
+            <p class="card__text">Что сделали + измеримый результат (если есть).</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Открыть</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Проект C</h3>
+            <p class="card__text">Что сделали + измеримый результат (если есть).</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Открыть</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+
+        <p class="text">
+          4–6 строк: опыт, специализация, принципы работы, ваш стек/сильные стороны.
+        </p>
+
+        <ul class="list">
+          <li>Факт/достижение 1</li>
+          <li>Факт/достижение 2</li>
+          <li>Факт/достижение 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p class="text">Выберите удобный способ связи:</p>
+
+        <ul class="contact">
+          <li><a class="link" href="mailto:you@example.com">you@example.com</a></li>
+          <li><a class="link" href="#" target="_blank" rel="noreferrer">Telegram</a></li>
+          <li><a class="link" href="#" target="_blank" rel="noreferrer">GitHub / Behance</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Имя. Все права защищены.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
