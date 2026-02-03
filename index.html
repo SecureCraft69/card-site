@@ -137,19 +137,42 @@
       </div>
     </section>
 
-    <!-- Контакты -->
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="section__title">Контакты</h2>
-        <p class="text">Напиши — коротко уточню задачу и предложу формат работы (разовый аудит / сопровождение / разработка).</p>
+   <!-- Контакты -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section__title">Контакты</h2>
+    <p class="text">
+      Напиши — коротко уточню задачу и предложу формат работы (разовый аудит / сопровождение / разработка).
+    </p>
 
-        <ul class="contact">
-          <li><a class="link" href="mailto:you@example.com">randolphqq321@proton.me</a></li>
-         <li><a class="link" href="https://t.me/Marq" target="_blank" rel="noreferrer">@Marq</a></li>
-          <li><a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a></li>
-        </ul>
+    <form class="contact-form" action="https://formspree.io/f/mgozqzqw" method="POST">
+      <div class="field">
+        <label class="label" for="name">Имя</label>
+        <input class="input" id="name" type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться">
       </div>
-    </section>
+
+      <div class="field">
+        <label class="label" for="email">Ваш email</label>
+        <input class="input" id="email" type="email" name="email" autocomplete="email" required placeholder="Чтобы я мог ответить">
+      </div>
+
+      <div class="field">
+        <label class="label" for="message">Сообщение</label>
+        <textarea class="textarea" id="message" name="message" rows="6" required placeholder="Коротко опишите задачу"></textarea>
+      </div>
+
+      <!-- антиспам: поле должно остаться пустым -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button class="btn btn--primary" type="submit">Отправить</button>
+    </form>
+
+    <ul class="contact" style="margin-top:16px">
+      <li><a class="link" href="https://t.me/Marq" target="_blank" rel="noreferrer">Telegram: @Marq</a></li>
+      <li><a class="link" href="https://github.com/bekford" target="_blank" rel="noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+</section>
   </main>
 
   <!-- Подвал -->
